@@ -1,6 +1,9 @@
-var uniqueRandomArray = require('unique-random-array');
-var emots             = require('./emots.json');
-var getRandomItem     = uniqueRandomArray(emots);
+"use strict";
+
+import uniqueRandomArray from 'unique-random-array';
+import emots             from './emots.json';
+
+let getRandomItem     = uniqueRandomArray(emots);
 
 module.exports = {
 	all : emots,
