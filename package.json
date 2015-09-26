@@ -1,14 +1,16 @@
 {
   "name": "emotsjs",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Get a random emot :runner:",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "commit" : "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm public && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devrchancay/emotsjs.git"
+    "url": "https://github.com/devrchancay/emotsjs.git"
   },
   "keywords": [
     "emots"
@@ -24,6 +26,11 @@
   },
   "devDependencies": {
     "chai": "3.3.0",
+    "commitizen": "1.0.4",
+    "cz-conventional-changelog": "1.1.1",
     "mocha": "2.3.3"
+  },
+  "czConfig" : {
+    "path" : "node_modules/cz-conventional-changelog"
   }
 }
