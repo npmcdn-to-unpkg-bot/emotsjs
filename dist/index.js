@@ -10,14 +10,42 @@ var _emotsJson = require('./emots.json');
 
 var _emotsJson2 = _interopRequireDefault(_emotsJson);
 
-var getRandomItem = (0, _uniqueRandomArray2['default'])(_emotsJson2['default']);
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 
 module.exports = {
-	all: _emotsJson2['default'],
-	random: random
+	all: all,
+	random: random,
+	get: get
 };
 
+function get(emot) {
+
+	var find = _emotsJson2['default'][emot];
+
+	if (find === undefined) {
+		return getRandomItem();
+	} else {
+		return find;
+	}
+}
+
+function all() {
+
+	var all = [];
+
+	_lodash2['default'].forEach(_emotsJson2['default'], function (v, i) {
+		all.push(v);
+	});
+
+	return all;
+}
+
 function random(number) {
+
 	if (number === undefined) {
 		return getRandomItem();
 	} else {

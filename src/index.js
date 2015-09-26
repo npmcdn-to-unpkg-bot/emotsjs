@@ -2,16 +2,42 @@
 
 import uniqueRandomArray from 'unique-random-array';
 import emots             from './emots.json';
+import _                 from 'lodash';
 
-let getRandomItem     = uniqueRandomArray(emots);
+let getRandomItem     = uniqueRandomArray(all());
 
 module.exports = {
-	all : emots,
-	random : random
+	all    : all,
+	random : random,
+	get    : get
 }
 
 
+function get(emot){
+
+	let find = emots[emot];
+
+	if(find === undefined){
+		return getRandomItem();
+	}
+	else{
+		return find;
+	}
+}
+
+function all(){
+
+	var all = [];
+
+	_.forEach(emots, function(v,i){
+		all.push(v);
+	})
+
+	return all;
+}
+
 function random(number){
+
 	if(number === undefined){
 		return getRandomItem();
 	}
