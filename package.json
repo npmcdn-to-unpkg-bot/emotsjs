@@ -1,6 +1,7 @@
 {
   "name": "emotsjs",
   "description": "Get a random emot :runner:",
+  "version" : "0.0.0-semantically-released",
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
