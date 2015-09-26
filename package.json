@@ -1,7 +1,7 @@
 {
   "name": "emotsjs",
   "description": "Get a random emot :runner:",
-  "version": "1.2.0",
+  "version": "0.0.0-semantically-released",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
