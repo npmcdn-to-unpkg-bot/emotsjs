@@ -257,9 +257,31 @@ dist/emots.json
  "zzz" :"💤",
  "dash" :"💨",
  "fire" :"🔥",
- "runner" : "🏃"
+ "running" : "🏃",
+ "hocho" : "🔪",
+ "baby_bottle" : "🍼",
+ "milky_way" : "🌌",
+ "eyeglasses" : "👓",
+ "watch" : "⌚",
+ "lock": "🔒",
+ "checkered_flag" : "🏁",
+ "trophy" : "🏆",
+ "sparkles" : "✨",
+ "dizzy" :"💫",
+ "star2" :"🌟",
+ "heavy_check_mark" :"✔",
+ "moneybag" :"💰",
+ "money_with_wings" :"💸",
+ "heavy_dollar_sign" :"💲",
+ "wheelchair" :"♿",
+ "cat" :"🐱",
+ "tiger" :"🐯",
+ "grimacing" : "😬",
+ "see_no_evil" : "🙈",
+ "speak_no_evil" : "🙊",
+ "hear_no_evil":"🙉",
+ "monkey_face":"🐵"
 }
-
 
 ```
  
