@@ -25,7 +25,7 @@
 	var emotjs = require('emotsjs');
     
     emot.all; // return all emots
-    emot.random(); // return one emots random
+    emot.random(); // return a random emot
     emot.random(n); // return n emots random
  	emot.get('rocket'); // return 'rocket' emot
  ```
