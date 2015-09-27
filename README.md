@@ -256,7 +256,8 @@ dist/emots.json
  "skull" :"💀",
  "zzz" :"💤",
  "dash" :"💨",
- "fire" :"🔥"
+ "fire" :"🔥",
+ "runner" : "🏃"
 }
 
 

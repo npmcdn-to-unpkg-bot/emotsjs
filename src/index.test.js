@@ -38,8 +38,8 @@ describe('Random', () => {
 describe('Get', () => {
 
 	it('should return a item by index from emotsjs.all', () => {
-		let item = emotsjs.get('rocket');
-		assert(item,'🚀');
+		let item = emotsjs.get('running');
+		assert(item,'🏃');
 	});
 
 	it('should return a random article , because passing a rate that does not exist from emots.all' , () => {

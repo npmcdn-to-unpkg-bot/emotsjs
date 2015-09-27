@@ -20,9 +20,9 @@ function get(emot){
 	if(find === undefined){
 		return getRandomItem();
 	}
-	else{
-		return find;
-	}
+	
+	return find;
+	
 }
 
 function all(){
