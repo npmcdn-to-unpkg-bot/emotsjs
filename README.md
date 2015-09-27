@@ -1,6 +1,6 @@
 # Emotsjs 
 ### use emoticons in your projects
-#### 🐹 ,'👏 , 💜,🍜, 🐔 🐮 , 🍓,🚹,😪, ⛽
+#### 🐹 👏 💜 🍜 🐔 🐮 🍓 🚹 😪 ⛽ 👿 
 
 
 [![travis build](https://img.shields.io/travis/devrchancay/emotsjs.svg?style=flat-square)](https://travis-ci.org/devrchancay/emotsjs)
@@ -24,10 +24,10 @@
 
 	var emotjs = require('emotsjs');
     
-    emot.all; // return all emots
-    emot.random(); // return a random emot
-    emot.random(n); // return n emots random
- 	emot.get('rocket'); // return 'rocket' emot
+    emotjs.all; // return all emots
+    emotjs.random(); // return a random emot
+    emotjs.random(n); // return n emots random
+ 	emotjs.get('rocket'); // return 'rocket' emot
  ```
 
 
