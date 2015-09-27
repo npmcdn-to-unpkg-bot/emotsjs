@@ -6,6 +6,8 @@
 [![travis build](https://img.shields.io/travis/devrchancay/emotsjs.svg?style=flat-square)](https://travis-ci.org/devrchancay/emotsjs)
 [![version](https://img.shields.io/npm/v/emotsjs.svg?style=flat-square)](https://www.npmjs.com/package/emotsjs)
 [![downloads](https://img.shields.io/npm/dm/emotsjs.svg?style=flat-square)](https://www.npmjs.com/package/emotsjs)
+[![license](https://img.shields.io/github/license/devrchancay/emotsjs.svg?style=flat-square)](https://github.com/devrchancay/emotsjs/blob/master/LICENSE)
+[![slack](https://noderslack.herokuapp.com/badge.svg?style=flat-square)](https://noderslack.herokuapp.com/)
 
 <hr>
 
