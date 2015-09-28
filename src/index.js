@@ -7,23 +7,12 @@ import _                 from 'lodash';
 let getRandomItem     = uniqueRandomArray(all());
 
 module.exports = {
-	all    : all,
-	random : random,
-	get    : get
+	all,    
+	random, 
+	get,
+	parse    
 }
 
-
-function get(emot){
-
-	let find = emots[emot];
-
-	if(find === undefined){
-		return getRandomItem();
-	}
-	
-	return find;
-	
-}
 
 function all(){
 
@@ -50,4 +39,28 @@ function random(number){
 
 		return randomItems;
 	}
+}
+
+function get(emot){
+
+	let find = emots[emot];
+
+	if(find === undefined){
+		return getRandomItem();
+	}
+	
+	return find;
+	
+}
+
+function parse(string){
+	let re = /\:(.*?)\:/i; 
+	let str = string;
+	let m;
+
+	while ((m = re.exec(str)) !== null) {
+	    str = str.replace(m[0],get(m[1]));
+	}
+
+	return str;
 }

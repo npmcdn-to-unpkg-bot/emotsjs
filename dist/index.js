@@ -19,19 +19,9 @@ var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 module.exports = {
 	all: all,
 	random: random,
-	get: get
+	get: get,
+	parse: parse
 };
-
-function get(emot) {
-
-	var find = _emotsJson2['default'][emot];
-
-	if (find === undefined) {
-		return getRandomItem();
-	} else {
-		return find;
-	}
-}
 
 function all() {
 
@@ -57,4 +47,27 @@ function random(number) {
 
 		return randomItems;
 	}
+}
+
+function get(emot) {
+
+	var find = _emotsJson2['default'][emot];
+
+	if (find === undefined) {
+		return getRandomItem();
+	}
+
+	return find;
+}
+
+function parse(string) {
+	var re = /\:(.*?)\:/i;
+	var str = string;
+	var m = undefined;
+
+	while ((m = re.exec(str)) !== null) {
+		str = str.replace(m[0], get(m[1]));
+	}
+
+	return str;
 }

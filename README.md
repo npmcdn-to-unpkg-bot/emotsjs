@@ -29,7 +29,8 @@
     emotjs.all; // return all emots
     emotjs.random(); // return a random emot
     emotjs.random(n); // return n emots random
- 	emotjs.get('rocket'); // return 'rocket' emot
+ 	  emotjs.get('rocket'); // return 'rocket' emot
+    emotjs.parse('hello :running:'); // finds and replaces the substring to emots
  ```
 
 

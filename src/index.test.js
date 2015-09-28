@@ -49,3 +49,13 @@ describe('Get', () => {
 	});
 
 });
+
+describe('Parse' , () => {
+
+	it('Should find and replace the substring for emots' , () => {
+		let message = 'hello, download emotsjs :running:';
+		let parse   = emotsjs.parse(message);
+		assert(parse,'hello, download emotsjs 🏃');
+	});
+	
+});
