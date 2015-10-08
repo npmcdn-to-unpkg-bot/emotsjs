@@ -262,6 +262,8 @@
  "fountain" :"⛲",
  "tent" :"⛺",
  "church" :"⛪",
+ "fire" :"🔥",
+ "closed_umbrella" :"🌂",
  "sunny" :"☀",
  "crescent_moon" :"🌙",
  "cloud" :"☁",
@@ -275,8 +277,6 @@
  "sparkles" :"✨",
  "star" :"⭐",
  "eight_spoked_asterisk" :"✳",
- "fire" :"🔥",
- "closed_umbrella" :"🌂",
  "alien" :"👽",
  "skull" :"💀"
 }
