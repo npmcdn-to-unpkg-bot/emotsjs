@@ -1,7 +1,7 @@
 {
   "name": "emotsjs",
   "description": "use emoticons in your projects",
-  "version" : "0.0.0-semantically-released",
+  "version": "0.0.0-semantically-released",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/devrchancay/emotsjs#readme",
   "dependencies": {
-    "lodash": "3.10.1",
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {

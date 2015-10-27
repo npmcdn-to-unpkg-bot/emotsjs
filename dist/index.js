@@ -10,10 +10,6 @@ var _emotsJson = require('./emots.json');
 
 var _emotsJson2 = _interopRequireDefault(_emotsJson);
 
-var _lodash = require('lodash');
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
 var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 
 module.exports = {
@@ -25,10 +21,10 @@ module.exports = {
 
 function all() {
 
-	var all = [];
+	var all = Object.keys(_emotsJson2['default']);
 
-	_lodash2['default'].forEach(_emotsJson2['default'], function (v, i) {
-		all.push(v);
+	all.map(function (item) {
+		return _emotsJson2['default'][item];
 	});
 
 	return all;

@@ -2,7 +2,6 @@
 
 import uniqueRandomArray from 'unique-random-array';
 import emots             from './emots.json';
-import _                 from 'lodash';
 
 let getRandomItem     = uniqueRandomArray(all());
 
@@ -16,11 +15,12 @@ module.exports = {
 
 function all(){
 
-	var all = [];
 
-	_.forEach(emots, function(v,i){
-		all.push(v);
-	})
+	const all = Object.keys(emots);
+
+	all.map((item) => {
+		return emots[item];
+	});
 
 	return all;
 }
