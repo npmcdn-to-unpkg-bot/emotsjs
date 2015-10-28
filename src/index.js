@@ -5,12 +5,12 @@ import emots             from './emots.json';
 
 let getRandomItem     = uniqueRandomArray(all());
 
-module.exports = {
+export default {
 	all,    
 	random, 
 	get,
 	parse    
-}
+};
 
 
 function all(){
@@ -54,9 +54,9 @@ function get(emot){
 }
 
 function parse(string){
-	let re = /\:(.*?)\:/i; 
-	let str = string;
-	let m;
+	const re = /\:(.*?)\:/i; 
+	let   str = string;
+	let   m;
 
 	while ((m = re.exec(str)) !== null) {
 	    str = str.replace(m[0],get(m[1]));
