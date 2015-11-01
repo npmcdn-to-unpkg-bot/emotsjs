@@ -1,5 +1,9 @@
 "use strict";
 
+Object.defineProperty(exports, '__esModule', {
+	value: true
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 var _uniqueRandomArray = require('unique-random-array');
@@ -12,7 +16,7 @@ var _emotsJson2 = _interopRequireDefault(_emotsJson);
 
 var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 
-module.exports = {
+exports['default'] = {
 	all: all,
 	random: random,
 	get: get,
@@ -23,7 +27,7 @@ function all() {
 
 	var all = Object.keys(_emotsJson2['default']);
 
-	all.map(function (item) {
+	all = all.map(function (item) {
 		return _emotsJson2['default'][item];
 	});
 
@@ -67,3 +71,4 @@ function parse(string) {
 
 	return str;
 }
+module.exports = exports['default'];

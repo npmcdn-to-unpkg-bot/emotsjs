@@ -6,20 +6,20 @@ import emots             from './emots.json';
 let getRandomItem     = uniqueRandomArray(all());
 
 export default {
-	all,    
-	random, 
+	all,
+	random,
 	get,
-	parse    
+	parse
 };
 
 
 function all(){
 
 
-	const all = Object.keys(emots);
+	let all = Object.keys(emots);
 
-	all.map((item) => {
-		return emots[item];
+	all = all.map((item) => {
+			return emots[item];
 	});
 
 	return all;
@@ -48,13 +48,13 @@ function get(emot){
 	if(find === undefined){
 		return getRandomItem();
 	}
-	
+
 	return find;
-	
+
 }
 
 function parse(string){
-	const re = /\:(.*?)\:/i; 
+	const re = /\:(.*?)\:/i;
 	let   str = string;
 	let   m;
 
