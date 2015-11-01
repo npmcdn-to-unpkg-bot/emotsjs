@@ -3,6 +3,10 @@
 Object.defineProperty(exports, '__esModule', {
 	value: true
 });
+exports.all = all;
+exports.random = random;
+exports.get = get;
+exports.parse = parse;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -15,13 +19,6 @@ var _emotsJson = require('./emots.json');
 var _emotsJson2 = _interopRequireDefault(_emotsJson);
 
 var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
-
-exports['default'] = {
-	all: all,
-	random: random,
-	get: get,
-	parse: parse
-};
 
 function all() {
 
@@ -71,4 +68,3 @@ function parse(string) {
 
 	return str;
 }
-module.exports = exports['default'];

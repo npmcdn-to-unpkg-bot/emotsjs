@@ -5,15 +5,7 @@ import emots             from './emots.json';
 
 let getRandomItem     = uniqueRandomArray(all());
 
-export default {
-	all,
-	random,
-	get,
-	parse
-};
-
-
-function all(){
+export function all(){
 
 
 	let all = Object.keys(emots);
@@ -25,7 +17,7 @@ function all(){
 	return all;
 }
 
-function random(number){
+export function random(number){
 
 	if(number === undefined){
 		return getRandomItem();
@@ -41,7 +33,7 @@ function random(number){
 	}
 }
 
-function get(emot){
+export function get(emot){
 
 	let find = emots[emot];
 
@@ -53,7 +45,7 @@ function get(emot){
 
 }
 
-function parse(string){
+export function parse(string){
 	const re = /\:(.*?)\:/i;
 	let   str = string;
 	let   m;
