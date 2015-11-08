@@ -11,6 +11,10 @@
 
 <hr>
 
+[![NPM](https://nodei.co/npm/emotsjs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/emotsjs)
+
+<hr>
+
 # Instalation  
 
 
