@@ -7,6 +7,7 @@ exports.all = all;
 exports.random = random;
 exports.get = get;
 exports.parse = parse;
+exports.Dom = Dom;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -17,6 +18,10 @@ var _uniqueRandomArray2 = _interopRequireDefault(_uniqueRandomArray);
 var _emotsJson = require('./emots.json');
 
 var _emotsJson2 = _interopRequireDefault(_emotsJson);
+
+var _emojione = require('emojione');
+
+var _emojione2 = _interopRequireDefault(_emojione);
 
 var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 
@@ -67,4 +72,9 @@ function parse(string) {
 	}
 
 	return str;
+}
+
+function Dom(string) {
+
+	return _emojione2['default'].toImage(string);
 }

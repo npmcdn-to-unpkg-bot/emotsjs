@@ -1,7 +1,7 @@
 "use strict";
 
 import {expect,assert} from 'chai';
-import {all, random , parse , get }  from './index.js';
+import {all, random , parse , get, Dom }  from './index.js';
 
 describe('Emotsjs' ,() => {
 	describe('all' ,() => {
@@ -53,9 +53,18 @@ describe('Get', () => {
 describe('Parse' , () => {
 
 	it('Should find and replace the substring for emots' , () => {
-		let message = 'hello, download emotsjs :running:';
+		let message = 'hello, download emotsjs :runner:';
 		let eparse   = parse(message);
 		assert(eparse,'hello, download emotsjs 🏃');
 	});
 
+});
+
+
+describe('Emojione native unicode + shortnames', () => {
+	it('Should return emoji image' , () => {
+		let message = 'hello, download emotsjs :runner:';
+		let eparse   = Dom(message);
+		assert(eparse,'hello, download emotsjs <img class="emojione" alt="🏃" src="//cdn.jsdelivr.net/emojione/assets/png/1F3C3.png?v=1.2.4"/>');
+	});
 });

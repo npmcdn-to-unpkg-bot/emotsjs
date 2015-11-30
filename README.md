@@ -1,6 +1,6 @@
-# Emotsjs 
+# Emotsjs
 ### use emoticons in your projects
-#### 🐹 👏 💜 🍜 🐔 🐮 🍓 🚹 😪 ⛽ 👿 
+#### 🐹 👏 💜 🍜 🐔 🐮 🍓 🚹 😪 ⛽ 👿
 
 
 [![travis build](https://img.shields.io/travis/devrchancay/emotsjs.svg?style=flat-square)](https://travis-ci.org/devrchancay/emotsjs)
@@ -18,7 +18,7 @@
 # Instalation  
 
 
-``` 
+```
  npm install --save emotsjs
 ```
 
@@ -28,21 +28,22 @@
 
 ```javascript
 
-	var emotjs = require('emotsjs');
-    
-  emotjs.all; // return all emots
-  emotjs.random(); // return a random emot
-  emotjs.random(n); // return n emots random
-  emotjs.get('rocket'); // return 'rocket' emot
-  emotjs.parse('hello :running:'); // finds and replaces the substring to emots
-  
+	var emotsjs = require('emotsjs');
+
+  emotsjs.all; // return all emots
+  emotsjs.random(); // return a random emot
+  emotsjs.random(n); // return n emots random
+  emotsjs.get('rocket'); // return 'rocket' emot
+  emotsjs.parse('hello :runner:'); // finds and replaces the substring to emots
+  emotsjs.Dom('hello, download emotsjs :runner:'); //hello, download emotsjs <img class="emojione" alt="🏃" src="//cdn.jsdelivr.net/emojione/assets/png/1F3C3.png?v=1.2.4"/>
+
  ```
 
 
 ## Emoticons :runner:
 
 
-dist/emots.json 
+dist/emots.json
 
 ```
 {
@@ -119,7 +120,7 @@ dist/emots.json
   "love_letter" :"💌",
   "couple_with_heart" :"💑",
   "kiss" :"💋",
-  "lips" :"👄", 
+  "lips" :"👄",
   "heart" : "<3",
   "dog" :"🐶",
   "bear" :"🐻",
@@ -263,6 +264,7 @@ dist/emots.json
  "zzz" :"💤",
  "dash" :"💨",
  "fire" :"🔥",
+ "runner" : "🏃",
  "running" : "🏃",
  "hocho" : "🔪",
  "baby_bottle" : "🍼",
@@ -290,11 +292,10 @@ dist/emots.json
 }
 
 ```
- 
+
 
 
 
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/devrchancay/emotsjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

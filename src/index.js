@@ -2,6 +2,7 @@
 
 import uniqueRandomArray from 'unique-random-array';
 import emots             from './emots.json';
+import emojione          from 'emojione';
 
 let getRandomItem     = uniqueRandomArray(all());
 
@@ -55,4 +56,9 @@ export function parse(string){
 	}
 
 	return str;
+}
+
+export function Dom(string){
+
+	return emojione.toImage(string);
 }
