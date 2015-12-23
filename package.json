@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devrchancay/emotsjs.git"
+    "url": "https://github.com/Code-Debug/emotsjs.git"
   },
   "keywords": [
     "emots"
@@ -23,9 +23,9 @@
   "author": "Ramón Chancay <http://noders.ec>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devrchancay/emotsjs/issues"
+    "url": "https://github.com/Code-Debug/emotsjs/issues"
   },
-  "homepage": "https://github.com/devrchancay/emotsjs#readme",
+  "homepage": "https://github.com/Code-Debug/emotsjs/#readme",
   "dependencies": {
     "emojione": "^1.5.2",
     "unique-random-array": "1.0.0"
