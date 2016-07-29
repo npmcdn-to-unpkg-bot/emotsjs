@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
     "build": "babel src/index.js -o dist/index.js",
-    "postbuild": "cp src/emots.json dist/ && browserify src/emots.js -o dist/emotsjs.min.js -t [ babelify --presets [ es2015, stage-0 ] ]",
+    "postbuild": "cp src/emots.json dist/ && browserify src/emots.js -o dist/emotsjs.min.js -t [ babelify --presets [ es2015 ] ]",
     "commit": "git-cz",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "test": "mocha src/index.test.js -w --compilers js:babel/register",
@@ -32,7 +32,6 @@
   "devDependencies": {
     "babel": "5.8.23",
     "babel-preset-es2015": "^6.1.18",
-    "babel-preset-stage-0": "^6.5.0",
     "chai": "3.3.0",
     "commitizen": "1.0.4",
     "cz-conventional-changelog": "1.1.1",

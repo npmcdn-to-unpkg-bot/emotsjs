@@ -30,6 +30,15 @@ describe('Random', () => {
 	});
 
 
+	it('should return an array of one element',() => {
+		let randomItems = random();
+		expect(randomItems).to.have.length(1);
+		randomItems.forEach((item) => {
+			expect(all()).to.include(item);
+		});
+	});
+
+
 
 });
 
