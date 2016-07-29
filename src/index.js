@@ -4,54 +4,35 @@ import uniqueRandomArray from 'unique-random-array';
 import emots             from './emots.json';
 import emojione          from 'emojione';
 
-let getRandomItem     = uniqueRandomArray(all());
+const getRandomItem     = uniqueRandomArray(all());
 
 export function all(){
-
-
-	let all = Object.keys(emots);
-
-	all = all.map((item) => {
-			return emots[item];
-	});
-
-	return all;
+	return Object.values(emots);
 }
 
-export function random(number){
 
-	if(number === undefined){
-		return getRandomItem();
-	}
-	else{
-		let randomItems = [];
+export function random(number = 1){
 
-		for (let i = 0; i <number ;i++) {
-			randomItems.push(getRandomItem());
-		}
+		const generateRandom = (prev, next , i) => {
+			if(i < number){
+				prev.push(getRandomItem());
+			}
+			return prev;
+		};
 
-		return randomItems;
-	}
+		return Object.values(emots).reduce(generateRandom,[]);
+
 }
 
 export function get(emot){
-
-	let find = emots[emot];
-
-	if(find === undefined){
-		return getRandomItem();
-	}
-
-	return find;
-
+	return emots[emot] ? emots[emot] : getRandomItem();
 }
 
-export function parse(string){
-	const re = /\:(.*?)\:/i;
-	let   str = string;
+export function parse(str){
+	const reExp = /\:(.*?)\:/i;
 	let   m;
 
-	while ((m = re.exec(str)) !== null) {
+	while ((m = reExp.exec(str)) !== null) {
 	    str = str.replace(m[0],get(m[1]));
 	}
 
@@ -59,6 +40,5 @@ export function parse(string){
 }
 
 export function Dom(string){
-
 	return emojione.toImage(string);
 }

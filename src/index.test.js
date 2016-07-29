@@ -20,10 +20,6 @@ describe('Emotsjs' ,() => {
 
 describe('Random', () => {
 
-	it('should return a random item from emotsjs.all',() => {
-		let randomItem = random();
-		expect(all()).to.include(randomItem);
-	});
 
 	it('should return an array of random items if passed a number',() => {
 		let randomItems = random(3);
@@ -32,6 +28,8 @@ describe('Random', () => {
 			expect(all()).to.include(item);
 		});
 	});
+
+
 
 });
 

@@ -28,38 +28,25 @@ var getRandomItem = (0, _uniqueRandomArray2['default'])(all());
 function all() {
 
 	var all = Object.keys(_emotsJson2['default']);
-
-	all = all.map(function (item) {
+	return all.map(function (item) {
 		return _emotsJson2['default'][item];
 	});
-
-	return all;
 }
 
-function random(number) {
+function random() {
+	var number = arguments.length <= 0 || arguments[0] === undefined ? 1 : arguments[0];
 
-	if (number === undefined) {
-		return getRandomItem();
-	} else {
-		var randomItems = [];
+	var randomItems = [];
 
-		for (var i = 0; i < number; i++) {
-			randomItems.push(getRandomItem());
-		}
-
-		return randomItems;
+	for (var i = 0; i < number; i++) {
+		randomItems.push(getRandomItem());
 	}
+
+	return randomItems;
 }
 
 function get(emot) {
-
-	var find = _emotsJson2['default'][emot];
-
-	if (find === undefined) {
-		return getRandomItem();
-	}
-
-	return find;
+	return _emotsJson2['default'][emot] ? _emotsJson2['default'][emot] : getRandomItem();
 }
 
 function parse(string) {
