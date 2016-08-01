@@ -25,6 +25,13 @@
 
 # how to use
 
+>> Frontend
+
+```
+  <script src="https://npmcdn.com/emotsjs@1.12.4/dist/emotsjs.min.js"></script>
+```
+
+>> Backend
 
 ```javascript
 
