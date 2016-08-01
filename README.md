@@ -32,12 +32,12 @@
 ```
 
 ```javascript  
-    emotsjs.all; // return all emots
-    emotsjs.random(); // return a random emot
-    emotsjs.random(n); // return n emots random
-    emotsjs.get('rocket'); // return 'rocket' emot
-    emotsjs.parse('hello :runner:'); // finds and replaces the substring to emots
-    emotsjs.Dom('hello, download emotsjs :runner:'); //hello, download emotsjs <img class="emojione" alt="🏃" src="//cdn.jsdelivr.net/emojione/assets/png/1F3C3.png?v=1.2.4"/>
+    all; // return all emots
+    random(); // return a random emot
+    random(n); // return n emots random
+    get('rocket'); // return 'rocket' emot
+    parse('hello :runner:'); // finds and replaces the substring to emots
+    Dom('hello, download emotsjs :runner:'); //hello, download emotsjs <img class="emojione" alt="🏃" src="//cdn.jsdelivr.net/emojione/assets/png/1F3C3.png?v=1.2.4"/>
 ```
 
 >> Backend | Babel etc etc
