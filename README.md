@@ -27,11 +27,20 @@
 
 >> Frontend
 
-```
-  <script src="https://npmcdn.com/emotsjs@1.12.4/dist/emotsjs.min.js"></script>
+```html
+  <script src="https://npmcdn.com/emotsjs@1.12.5/dist/emotsjs.min.js"></script>
 ```
 
->> Backend
+```javascript  
+    emotsjs.all; // return all emots
+    emotsjs.random(); // return a random emot
+    emotsjs.random(n); // return n emots random
+    emotsjs.get('rocket'); // return 'rocket' emot
+    emotsjs.parse('hello :runner:'); // finds and replaces the substring to emots
+    emotsjs.Dom('hello, download emotsjs :runner:'); //hello, download emotsjs <img class="emojione" alt="🏃" src="//cdn.jsdelivr.net/emojione/assets/png/1F3C3.png?v=1.2.4"/>
+```
+
+>> Backend | Babel etc etc
 
 ```javascript
 
