@@ -28,7 +28,7 @@
 >> Frontend
 
 ```html
-  <script src="https://npmcdn.com/emotsjs@1.12.5/dist/emotsjs.min.js"></script>
+  <script src="https://unpkg.com/emotsjs@1.12.5/dist/emotsjs.min.js"></script>
 ```
 
 ```javascript  
